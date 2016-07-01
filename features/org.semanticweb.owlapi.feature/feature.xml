@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.semanticweb.owlapi.feature"
+      label="OWLAPI Binaries"
+      version="5.0.2.qualifier"
+      provider-name="AgentLab">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <url>
+      <update label="AgentLab OWLAPI Update Site" url="http://agentlab.ru/eclipse/update/org.semanticweb.owlapi"/>
+   </url>
+
+   <requires>
+      <import plugin="org.apache.commons.io" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava" version="18.0.0" match="greaterOrEqual"/>
+      <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="com.google.jsr305" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.slf4j.api" version="1.7.2" match="greaterOrEqual"/>
+      <import plugin="javax.inject"/>
+      <import plugin="org.semanticweb.owlapi.api" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.semanticweb.owlapi.oboformat" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.semanticweb.owlapi.parsers" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.semanticweb.owlapi.impl" version="5.0.0" match="greaterOrEqual"/>
+      <import plugin="org.semanticweb.owlapi.tools" version="5.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.semanticweb.owlapi.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.apibinding"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.compatibility"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.contract"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.fixers"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.impl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.oboformat"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.parsers"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.rio"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.semanticweb.owlapi.tools"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

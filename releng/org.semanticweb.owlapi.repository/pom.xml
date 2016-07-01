@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<artifactId>org.semanticweb.owlapi.repository</artifactId>
+	
+	<packaging>eclipse-repository</packaging>
+
+	<parent>
+		<groupId>org.semanticweb.owlapi</groupId>
+		<artifactId>org.semanticweb.owlapi.releng</artifactId>
+		<relativePath>../../pom.xml</relativePath>
+		<version>5.0.2-SNAPSHOT</version>
+	</parent>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<configuration>
+					<includeAllDependencies>false</includeAllDependencies>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>release-composite</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho.extras</groupId>
+						<artifactId>tycho-eclipserun-plugin</artifactId>
+						<version>${tycho-version}</version>
+						<configuration>
+							<!-- IMPORTANT: DO NOT split the arg line -->
+							<appArgLine>-application org.eclipse.ant.core.antRunner -buildfile ../../../orbit-parent/ru.agentlab.orbit.parent/packaging-p2composite.ant p2.composite.add -Dsite.label="Composite Site Example" -Dsite.dir=${site.dir} -Dproject.build.directory=${project.build.directory} -DunqualifiedVersion=${unqualifiedVersion} -DbuildQualifier=${buildQualifier}</appArgLine>
+							<repositories>
+								<repository>
+									<id>luna</id>
+									<layout>p2</layout>
+									<url>http://download.eclipse.org/releases/luna</url>
+								</repository>
+							</repositories>
+							<dependencies>
+								<dependency>
+									<artifactId>org.eclipse.ant.core</artifactId>
+									<type>eclipse-plugin</type>
+								</dependency>
+								<dependency>
+									<artifactId>org.apache.ant</artifactId>
+									<type>eclipse-plugin</type>
+								</dependency>
+								<dependency>
+									<artifactId>org.eclipse.equinox.p2.repository.tools</artifactId>
+									<type>eclipse-plugin</type>
+								</dependency>
+								<dependency>
+									<artifactId>org.eclipse.equinox.p2.core.feature</artifactId>
+									<type>eclipse-feature</type>
+								</dependency>
+								<dependency>
+									<artifactId>org.eclipse.equinox.p2.extras.feature</artifactId>
+									<type>eclipse-feature</type>
+								</dependency>
+								<dependency>
+									<artifactId>org.eclipse.equinox.ds</artifactId>
+									<type>eclipse-plugin</type>
+								</dependency>
+							</dependencies>
+						</configuration>
+						<executions>
+							<execution>
+								<id>add-p2-composite-repository</id>
+								<phase>package</phase>
+								<goals>
+									<goal>eclipse-run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>

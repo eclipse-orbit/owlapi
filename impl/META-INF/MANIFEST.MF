@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OwlAPI API
+Bundle-SymbolicName: org.semanticweb.owlapi.impl
+Bundle-Version: 5.0.2.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.semanticweb.owlapi.api;bundle-version="5.0.0",
+ com.google.guava;bundle-version="18.0.0",
+ com.google.inject;bundle-version="3.0.0";resolution:=optional,
+ org.slf4j.api;bundle-version="1.7.2"
+Import-Package: com.google.inject.multibindings;version="1.3.0",
+ javax.annotation;version="[1.0.0,1.0.0]";resolution:=optional,
+ javax.annotation.concurrent;version="[1.0.0,1.0.0]";resolution:=optional,
+ javax.annotation.meta;version="[1.0.0,1.0.0]";resolution:=optional,
+ javax.inject;version="1.0.0";resolution:=optional
+Bundle-ClassPath: target/dependency/trove4j.jar,
+ .
+Export-Package: org.semanticweb.owlapi.reasoner.impl,
+ org.semanticweb.owlapi.reasoner.structural,
+ uk.ac.manchester.cs.owl.owlapi,
+ uk.ac.manchester.cs.owl.owlapi.concurrent

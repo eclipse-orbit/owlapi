@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="AgentLab Orbit Update Site" url="http://agentlab.ru/eclipse/update/org.semanticweb.owlapi">
+      AgentLab OWLAPI Update Site
+   </description>
+   
+   <category-def name="org.semanticweb.owlapi" label="Semantic Web OWLAPI"/>
+	  
+   <feature id="org.semanticweb.owlapi.feature"><category name="org.semanticweb.owlapi"/></feature>
+   <feature id="org.semanticweb.owlapi.feature.source"><category name="org.semanticweb.owlapi"/></feature>
+</site>

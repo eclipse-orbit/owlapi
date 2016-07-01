@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OwlAPI API Binding
+Bundle-SymbolicName: org.semanticweb.owlapi.apibinding
+Bundle-Version: 5.0.2.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.semanticweb.owlapi.impl;bundle-version="5.0.0",
+ org.semanticweb.owlapi.api;bundle-version="5.0.0",
+ org.semanticweb.owlapi.oboformat;bundle-version="5.0.0",
+ org.semanticweb.owlapi.parsers;bundle-version="5.0.0",
+ com.google.inject;bundle-version="3.0.0";resolution:=optional
+Import-Package: javax.annotation;version="[1.0.0,1.0.0]";resolution:=optional,
+ javax.annotation.concurrent;version="[1.0.0,1.0.0]";resolution:=optional,
+ javax.annotation.meta;version="[1.0.0,1.0.0]";resolution:=optional,
+ javax.inject;version="1.0.0";resolution:=optional
+Export-Package: org.semanticweb.owlapi.apibinding

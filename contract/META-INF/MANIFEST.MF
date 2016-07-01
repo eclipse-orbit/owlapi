@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OwlAPI Contract
+Bundle-SymbolicName: org.semanticweb.owlapi.contract
+Bundle-Version: 5.0.2.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: javax.annotation;version="[1.0.0,1.0.0]",
+ javax.annotation.concurrent;version="[1.0.0,1.0.0]",
+ javax.annotation.meta;version="[1.0.0,1.0.0]",
+ javax.inject;version="1.0.0";resolution:=optional
+Require-Bundle: org.semanticweb.owlapi.api;bundle-version="5.0.0",
+ org.semanticweb.owlapi.tools;bundle-version="5.0.0"
+Export-Package: uk.ac.manchester.owl.owlapi.tutorialowled2011

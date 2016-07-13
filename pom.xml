@@ -23,7 +23,7 @@
 		<module>apibinding</module>
 		<module>compatibility</module>
 		<module>contract</module>
-		<module>fixers</module>
+		<!--<module>fixers</module>-->
 		<module>impl</module>
 		<module>oboformat</module>
 		<module>parsers</module>
@@ -36,10 +36,10 @@
 		<module>../../tests/org.semanticweb.owlapi.fixers.tests</module>
 		<module>../../tests/org.semanticweb.owlapi.impl.tests</module>
 		<module>../../tests/org.semanticweb.owlapi.oboformat.tests</module>
-		<module>../../tests/org.semanticweb.owlapi.parsers.tests</module>
+		<module>../../tests/org.semanticweb.owlapi.parsers.tests</module>-->
 		
-		<module>../../features/org.semanticweb.owlapi.feature</module>
-		<module>../org.semanticweb.owlapi.repository</module>-->
+		<module>features/org.semanticweb.owlapi.feature</module>
+		<module>releng/org.semanticweb.owlapi.repository</module>
 	</modules>
 	
 	<build>
@@ -52,7 +52,7 @@
 						<artifact>
 							<groupId>org.semanticweb.owlapi</groupId>
 							<artifactId>org.semanticweb.owlapi.target</artifactId>
-							<version>4.0.0-SNAPSHOT</version>
+							<version>5.0.2-SNAPSHOT</version>
 						</artifact>
 					</target>
 					<targetDefinitionIncludeSource>honor</targetDefinitionIncludeSource>

@@ -11,7 +11,7 @@
 		<groupId>org.semanticweb.owlapi</groupId>
 		<artifactId>org.semanticweb.owlapi.releng</artifactId>
 		<version>5.0.2-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
 	<build>

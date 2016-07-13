@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.8"?>
-<target name="Generated from OWLAPI" sequenceNumber="6">
+<target name="Generated from OWLAPI" sequenceNumber="8">
   <locations>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="ch.qos.logback.classic" version="0.0.0"/>
@@ -127,6 +127,19 @@
       <unit id="net.sf.trove4j.feature.feature.group" version="0.0.0"/>
       <unit id="net.sf.trove4j.feature.feature.jar" version="0.0.0"/>
       <repository location="http://agentlab.ru/p2/orbit/net.sf.trove4j/updates/nightly/latest"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="com.github.benmanes.caffeine" version="0.0.0"/>
+      <unit id="com.github.benmanes.caffeine.feature.feature.group" version="0.0.0"/>
+      <unit id="com.github.benmanes.caffeine.feature.feature.jar" version="0.0.0"/>
+      <repository location="http://www.agentlab.ru/p2/orbit/com.github.benmanes.caffeine/2.1.0/"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.apache.commons.rdf.api" version="0.0.0"/>
+      <unit id="org.apache.commons.rdf.feature.feature.group" version="0.0.0"/>
+      <unit id="org.apache.commons.rdf.feature.feature.jar" version="0.0.0"/>
+      <unit id="org.apache.commons.rdf.simple" version="0.0.0"/>
+      <repository location="http://www.agentlab.ru/p2/orbit/org.apache.commons.rdf/0.1.0/"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.xmlcommons" version="0.0.0"/>

@@ -15,7 +15,7 @@
 	</parent>
 	
 	<properties>
-		<sesame.version>2.7.12</sesame.version>
+		<sesame.version>4.0.2</sesame.version>
 	</properties>
 
 	<build>
@@ -111,16 +111,22 @@
 									</artifactItem>
 									
 									<artifactItem>
-										<groupId>com.github.jsonld-java</groupId>
-										<artifactId>jsonld-java-sesame</artifactId>
-										<version>0.5.0</version>
+										<groupId>org.openrdf.sesame</groupId>
+										<artifactId>sesame-rio-jsonld</artifactId>
+										<version>${sesame.version}</version>
 									</artifactItem>
 									
 									<artifactItem>
+										<groupId>com.github.jsonld-java</groupId>
+										<artifactId>jsonld-java</artifactId>
+										<version>0.7.0</version>
+									</artifactItem>
+									
+									<!-- <artifactItem>
 										<groupId>org.semarglproject</groupId>
 										<artifactId>semargl-sesame</artifactId>
 										<version>0.6.1</version>
-									</artifactItem>
+									</artifactItem> -->
 									
 									<!-- <artifactItem>
 										<groupId>org.openrdf.sesame</groupId>

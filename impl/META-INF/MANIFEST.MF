@@ -6,22 +6,20 @@ Bundle-Version: 5.0.2.qualifier
 Bundle-Vendor: AgentLab
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Require-Bundle: org.semanticweb.owlapi.api;bundle-version="5.0.0"
-Import-Package: com.github.benmanes.caffeine.cache;version="2.1.0",
+Require-Bundle: org.semanticweb.owlapi.api;bundle-version="5.0.0",
+ com.github.ben-manes.caffeine;bundle-version="2.3.2",
+ net.sf.trove4j;bundle-version="3.0.3"
+Import-Package: com.github.benmanes.caffeine.cache,
  com.google.common.collect;version="18.0.0",
  com.google.inject;version="1.3.0",
  com.google.inject.assistedinject;version="1.3.0",
  com.google.inject.binder;version="1.3.0",
  com.google.inject.multibindings;version="1.3.0",
- javax.annotation;version="[1.0.0,1.0.0]";resolution:=optional,
- javax.annotation.concurrent;version="[1.0.0,1.0.0]";resolution:=optional,
- javax.annotation.meta;version="[1.0.0,1.0.0]";resolution:=optional,
  javax.inject;version="1.0.0";resolution:=optional,
  org.apache.commons.rdf.api;version="0.1.0",
  org.slf4j;version="1.7.2"
-Bundle-ClassPath: target/dependency/trove4j.jar,
- .
-Export-Package: org.semanticweb.owlapi.reasoner.impl,
- org.semanticweb.owlapi.reasoner.structural,
- uk.ac.manchester.cs.owl.owlapi,
- uk.ac.manchester.cs.owl.owlapi.concurrent
+Bundle-ClassPath: .
+Export-Package: org.semanticweb.owlapi.reasoner.impl;version="5.0.2",
+ org.semanticweb.owlapi.reasoner.structural;version="5.0.2",
+ uk.ac.manchester.cs.owl.owlapi;version="5.0.2",
+ uk.ac.manchester.cs.owl.owlapi.concurrent;version="5.0.2"

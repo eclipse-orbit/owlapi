@@ -24,20 +24,18 @@
    <requires>
       <import plugin="com.google.guava" version="18.0.0" match="greaterOrEqual"/>
       <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="net.sf.trove4j"/>
       <import plugin="org.apache.commons.io" version="2.2.0" match="greaterOrEqual"/>
       <import plugin="org.slf4j.api" version="1.7.2" match="greaterOrEqual"/>
+      <import plugin="org.tukaani.xz"/>
       <import plugin="javax.inject"/>
-      <import plugin="com.google.jsr305" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.semanticweb.owlapi.impl" version="5.0.0" match="greaterOrEqual"/>
       <import plugin="org.semanticweb.owlapi.api" version="5.0.0" match="greaterOrEqual"/>
       <import plugin="org.semanticweb.owlapi.oboformat" version="5.0.0" match="greaterOrEqual"/>
       <import plugin="org.semanticweb.owlapi.parsers" version="5.0.0" match="greaterOrEqual"/>
       <import plugin="org.semanticweb.owlapi.tools" version="5.0.0" match="greaterOrEqual"/>
-      <import plugin="com.github.benmanes.caffeine"/>
-      <import plugin="net.sf.trove4j"/>
-      <import plugin="org.apache.commons.rdf.api"/>
-      <import plugin="org.tukaani.xz"/>
-      <import plugin="org.semanticweb.owlapi.api" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="com.github.ben-manes.caffeine" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.rdf"/>
    </requires>
 
    <plugin

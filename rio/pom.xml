@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>org.semanticweb.owlapi.rio</artifactId>
-	
+
 	<packaging>eclipse-plugin</packaging>
 
 	<parent>
@@ -13,7 +13,7 @@
 		<version>5.0.2-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	
+
 	<properties>
 		<sesame.version>4.0.2</sesame.version>
 	</properties>
@@ -31,120 +31,117 @@
 						</goals>
 						<configuration>
 							<stripVersion>true</stripVersion>
-								<artifactItems>
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-model</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-api</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-languages</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-datatypes</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-binary</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-n3</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-nquads</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-ntriples</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-rdfjson</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-rdfxml</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-trix</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-turtle</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-trig</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-rio-jsonld</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-									
-									<artifactItem>
-										<groupId>com.github.jsonld-java</groupId>
-										<artifactId>jsonld-java</artifactId>
-										<version>0.7.0</version>
-									</artifactItem>
-									
-									<!-- <artifactItem>
-										<groupId>org.semarglproject</groupId>
-										<artifactId>semargl-sesame</artifactId>
-										<version>0.6.1</version>
-									</artifactItem> -->
-									
-									<!-- <artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-bom</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem> -->
-									<artifactItem>
-										<groupId>org.openrdf.sesame</groupId>
-										<artifactId>sesame-util</artifactId>
-										<version>${sesame.version}</version>
-									</artifactItem>
-								</artifactItems>
-								<outputDirectory>${lib.folder}</outputDirectory>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-model</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-api</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-languages</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-datatypes</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-binary</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-n3</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-nquads</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-ntriples</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-rdfjson</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-rdfxml</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-trix</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-turtle</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-trig</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-rio-jsonld</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+
+								<artifactItem>
+									<groupId>com.github.jsonld-java</groupId>
+									<artifactId>jsonld-java</artifactId>
+									<version>0.7.0</version>
+								</artifactItem>
+
+								<!-- <artifactItem>
+									<groupId>org.semarglproject</groupId>
+									<artifactId>semargl-sesame</artifactId>
+									<version>0.6.1</version> </artifactItem> -->
+
+								<!-- <artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-bom</artifactId>
+									<version>${sesame.version}</version> </artifactItem> -->
+								<artifactItem>
+									<groupId>org.openrdf.sesame</groupId>
+									<artifactId>sesame-util</artifactId>
+									<version>${sesame.version}</version>
+								</artifactItem>
+							</artifactItems>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-source-plugin</artifactId>
